@@ -1,0 +1,145 @@
+terminal: Bash/ Shell Script
+$ = usuário comum;
+# = super usuário
+sudo -i = trocar para super usuário
+==========================
+comandos de manipulção de diretório
+ls= lista diretório
+     ls -lh
+     ls-a
+sempre quer for azul é diretório, branco é texto, todo arquivo ou diretório quer começar com ponto é oculto, verde piscina link simbolico, marca texto verde = perigo
+cd=  mudar de diretório 
+          cd - =voltar uma vez 
+          cd ~ =voltar para diretório pessoal
+          cd .. = dsecer um nivel 
+ pwd= qual dirétorio voce está 
+ history = mostra o histórico de comando 
+          ! executar o comando da linha de referência 
+mkdir=  criar diretórios
+           mkdir -v = verboso
+           SENAC Tatuape 
+ajuda de comandos 
+           help 
+           man
+rm - remover arquivos ou diretorios 
+            -f = forçar
+            -v = verboso
+            -r= rercusivo
+////////////////////////////////////////////////////////////////
+2  l5
+    3  apt
+    4  sudo
+    5  apt
+    6  sudo
+    7  jknn
+    8  sudo
+    9  sudo apt up
+   10  sudo apt update 
+   11  sudo apt up
+   12  sudo apt upgrade
+   13  sudo apt full-upgrade 
+   14  sudo apt dist-upgrade 
+   15  sudo apt autoremove 
+   16  sudo apt autoclean 
+   17  sudo apt autoclean
+   18  sudo apt linux
+   19  sudo apt version
+   20  sudo apt clean
+   21  sudo apt update 
+   22  history
+   23  sudo
+   24  sudo apt up
+   25  sudo apt install hollywood 
+   26  hollywood 
+   27  sudo update
+   28  sudo apt update
+   29  subo apt update
+   30  sudo apt update
+   31  sudo apt install
+   32  sudo apt install kazam
+   33  sudo apt install gta v
+   34  sudo apt instal telegram
+   35  sudo apt instal git
+   36  sudo apt install git
+   37  sudo apt install git vim python2 python3
+   38  sudo apt install wps office
+   39  sudo apt install wps office2003-schemas 
+   40  sudo apt install wpsofice
+   41  sudo apt update
+   42  sudo apt upgrade
+   43  sudo apt full-upgrade
+   44  sudo apt dist-upgrade
+   45  id
+   46  LS
+   47  ls
+   48  ls  - lh
+   49  ls - lh
+   50  ls -lh
+   51  ls -a
+   52  ls -lsa
+   53  cd
+   54  cd /
+   55  ls
+   56  ls -lh
+   57  pwd
+   58  cd -
+   59  pwd
+   60  ls
+   61  cd do
+   62  cd Documentos
+   63  cd /
+   64  cd home/senac/Documentos/
+   65  cd -
+   66  cd ~/Documentos/
+   67  pwd 
+   68  cd ..
+   69  pwd
+   70  cd ..
+   71  history
+   72  ls
+   73  mkdir senac
+   74  mkdir SENAC
+   75  mkdir -v tatuape
+   76  ls
+   77  cd senac
+   78  mkdir - v
+   79  mkdir -v Alisson  Andrew Arthur Bruno Caio 
+   80  ls
+   81  ls -lh
+   82  mkdir -v 'SENAC Tatuape'
+   83  ls
+   84  cd SENAC Tatuapé/
+   85  cd 'SENAC Tatuape'/
+   86  cd ..
+   87  mkdir -p tat/info tst est amd
+   88  ls
+   89  mkdir -p tat/infotstestamd
+   90  ls
+   91  cd tat/
+   92  ls
+   93  mkdir -p tat/ info tst est amd
+   94  ls
+   95  tat
+   96  ls 
+   97  tat/
+   98  cd tat/
+   99  ls
+  100  ls -lh
+  101  cd ..
+  102  pwd
+  103  mkdir --help
+  104  man mkdir
+  105  mkdir -pv tat/info
+  106  mkdir -v tat /tst tat/adm tat/est
+  107  ls
+  108  cd / Documentos/
+  109  cd Documentos/
+  110  rm Alisson/
+  111  rm Al
+  112  cd Documentos/
+  113  cd senac
+  114  rm Alisson/
+  115  rm - Rfv Alisson/
+  116  rm -R Alisson/
+  117  exit
+  118  history
