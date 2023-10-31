@@ -1,0 +1,32 @@
+cd- mudar de diretorio
+ls- lista arquivos e diretorios 
+mkdir- criar diretorios 
+pwd- listar 
+rm- remover arquivos e diretorios 
+echo - imprime na tela o conteudo
+cat - imprime o conteudo do arquivo
+tac - lista o conteudo do arquivo invertido
+touch- muda data e hora do arquivo
+cp -  copiar arquivo ou diretorios 
+-v - verboso 
+mv - mover aequivo ou diretorio (renomear)
+> - redirencionador de saida 
+>> - redirencionador de saida adicionando
+| - redirecionar a saida de um comando com a entrada de outro comando 
+less- leitor de arquivos 
+head - lista o inicio do arquivo
+tail - lista o final do arquivo
+
+DESAFIO- cat -n /etc/service | head -n 200 | tail -n 101 | less
+
+
+
+
+                    
+
+
+
+
+
+
+
