@@ -1,0 +1,13 @@
+aula07
+vim - abre um editor de texto
+insert - para alterar inserçao e substituiçao 
+shift : - abrir tela de comamdo
+q! - sair forçado 
+w - salvar 
+wq - salvar e sair
+dd- apagar a linhas inteiras 
+x - sair e salvar 
+X - adiciona uma senha no arquivo 
+sudo rm -Rfv */ - remover todos os diretorios e arquivos 
+https://aurelio.net/
+https://aurelio.net/vim/vim-basico.txt
