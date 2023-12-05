@@ -1,0 +1,29 @@
+/**
+@author Arthur / Caio
+*/
+
+//variavel pra setar o tempo
+int tempo = 2000;
+
+
+void setup() {
+ pinMode (10,OUTPUT); //verde
+ pinMode(11,OUTPUT);  //amarelo
+ pinMode(12, OUTPUT); //vermelho
+
+}
+
+void loop() {
+  //1º ciclo
+  digitalWrite(10, HIGH);
+  delay(tempo);
+  //2º ciclo
+  digitalWrite(10, LOW); //verde apagado
+  digitalWrite(11, HIGH); //amarelo acesso
+  delay (1000);
+ // 3ºciclo
+ digitalWrite(11, LOW); //amarelo apagado
+digitalWrite(12, HIGH); //vermelho acesso
+delay(2000);
+digitalWrite(12, LOW); //vermelho apagado
+}
