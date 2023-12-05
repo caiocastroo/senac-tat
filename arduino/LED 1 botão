@@ -1,0 +1,17 @@
+/**
+ Acionamento de um LED com 2 botões
+*/
+int botao;
+
+void setup() {
+  pinMode(13, OUTPUT);
+  pinMode(2, INPUT_PULLUP);
+}
+
+void loop() {
+   botao = digitalRead(2);  //leitura do botão (1 não pressionado 0 pressionado)
+  if (botao == 0) {
+   digitalWrite(13, !digitalRead(13)); //ler o estado do LED e inverter a lógica
+  }
+  delay(200); //reduzir efeito mecânico da chave
+}
