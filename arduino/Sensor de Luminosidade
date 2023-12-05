@@ -1,0 +1,26 @@
+/**
+Sensor de Luminosidade
+  @author Caio Castro
+ */
+
+int sensor;  // varialvel uasada para amazenar o valor so sensor de luz
+
+void setup() {
+  Serial.begin(9600);  // iniciar comunicaçao serial
+  pinMode(13, OUTPUT);  // led (saida))
+}
+
+void loop() {
+  sensor = analogRead(A0);  // leitura da entrada analogica  A0 -> sensor   (0 a 1024)
+  Serial.print(sensor); // mostrar no terminal o valor do sensor 
+  // se a leitura do sensor for menor que 500 esta escuro 
+if (sensor < 500){ 
+  digitalWrite(13, HIGH); // acender o led 
+} else { // se for iagual ou maior que 500 esta claro 
+  digitalWrite(13, LOW); // apagar o led
+}
+
+
+
+}
+
