@@ -1,0 +1,63 @@
+//variavel pra setar o tempo
+int tempo = 50;
+
+
+void setup() {
+  pinMode(8, OUTPUT);
+ pinMode(9, OUTPUT);
+ pinMode(10, OUTPUT); 
+ pinMode(11, OUTPUT);  
+ pinMode(12, OUTPUT); 
+ pinMode(13, OUTPUT);
+}
+
+void loop() {
+  //1º ciclo
+  digitalWrite(8, HIGH);
+  delay(tempo);
+  //2º ciclo
+  digitalWrite(8, LOW); 
+  digitalWrite(9, HIGH); 
+  delay (tempo);
+ // 3ºciclo
+ digitalWrite(9, LOW); 
+digitalWrite(10, HIGH); 
+delay(tempo);
+digitalWrite(10, LOW); 
+ //1º ciclo
+  digitalWrite(11, HIGH);
+  delay(tempo);
+  //2º ciclo
+  digitalWrite(11, LOW); 
+  digitalWrite(12, HIGH); 
+  delay (tempo);
+ // 3ºciclo
+ digitalWrite(12, LOW); 
+digitalWrite(13, HIGH); 
+delay(tempo);
+digitalWrite(13, LOW); 
+ //1º ciclo
+  digitalWrite(13, HIGH);
+  delay(tempo);
+  //2º ciclo
+  digitalWrite(13, LOW); 
+  digitalWrite(12, HIGH); 
+  delay (tempo);
+ // 3ºciclo
+ digitalWrite(12, LOW); 
+digitalWrite(11, HIGH); 
+delay(tempo);
+digitalWrite(11, LOW); 
+ //1º ciclo
+  digitalWrite(10, HIGH);
+  delay(tempo);
+  //2º ciclo
+  digitalWrite(10, LOW); 
+  digitalWrite(9, HIGH); 
+  delay (tempo);
+ // 3ºciclo
+ digitalWrite(9, LOW); 
+digitalWrite(8, HIGH); 
+delay(tempo);
+digitalWrite(8, LOW); 
+}
