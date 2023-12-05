@@ -1,0 +1,28 @@
+/**
+ Acionamento de um LED com 2 botões
+*/
+
+//variáveis
+int botao1;  // botão 1
+int botao2;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+  pinMode(2, INPUT_PULLUP);  //configurar o pino 2 como entrada
+  pinMode(3, INPUT_PULLUP);
+}
+
+void loop() {
+  //botão 1
+  botao1 = digitalRead(2);  //leitura do estado do botão (0 1)
+  Serial.println(botao1);   //exibir o valor da variável do botão 1
+  if (botao1 == 0) {
+    digitalWrite(13, HIGH);
+    }
+    //botao 2
+    botao2 = digitalRead(3);
+    if (botao2 == 0) {
+      digitalWrite(13, LOW);
+    }
+  }
