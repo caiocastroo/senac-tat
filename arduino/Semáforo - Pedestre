@@ -2,85 +2,79 @@ int tempo = 5000;
 int botao;
 
 void setup() {
-  pinMode(10, OUTPUT);
-    pinMode(11, OUTPUT);
-      pinMode(12, OUTPUT);
-      pinMode(2, INPUT_PULLUP);
-      pinMode(6, OUTPUT);
-pinMode(7, OUTPUT);
-
+  pinMode(10, OUTPUT);       // verde
+  pinMode(11, OUTPUT);       // amarelo
+  pinMode(12, OUTPUT);       // vermelho
+  pinMode(2, INPUT_PULLUP);  // botao
+  pinMode(6, OUTPUT);        // veremelho - pedestre
+  pinMode(7, OUTPUT);        // verde - pedestre
 }
 
 void loop() {
-botao = digitalRead(2);
+  botao = digitalRead(2);
+  if (botao == 1) {
+    digitalWrite(10, HIGH);
+    digitalWrite(6, HIGH);
+
+  } else {
+    digitalWrite(10, LOW);
+
+    digitalWrite(10, HIGH);
+    delay(tempo);
+    //2º ciclo
+    digitalWrite(10, LOW);   //verde apagado
+    digitalWrite(11, HIGH);  //amarelo acesso
+    delay(3000);
+    // 3ºciclo
+    digitalWrite(11, LOW);   //amarelo apagado
+    digitalWrite(12, HIGH);  //vermelho acesso
+
+
+
+    botao = digitalRead(2);
     if (botao == 1) {
-  digitalWrite(10, HIGH);
-  digitalWrite(6, HIGH);
-    
-     } else {
-      digitalWrite(10, LOW);
 
-  digitalWrite(10, HIGH);
-  delay(tempo);
-  //2º ciclo
-  digitalWrite(10, LOW); //verde apagado
-  digitalWrite(11, HIGH); //amarelo acesso
-  delay (3000);
- // 3ºciclo
- digitalWrite(11, LOW); //amarelo apagado
-digitalWrite(12, HIGH); //vermelho acesso
+      digitalWrite(12, HIGH);  //vermelho acesso
 
+      digitalWrite(7, HIGH);
 
-
-botao = digitalRead(2);
- if (botao == 1) {
-
-   digitalWrite(12, HIGH); //vermelho acesso
-
-  digitalWrite(7, HIGH);
-
-  digitalWrite(6, LOW);
-  delay( 5000);
-  digitalWrite(7, LOW);
-    digitalWrite(6, LOW);
-        delay(300);
-
-  digitalWrite(6, HIGH);
+      digitalWrite(6, LOW);
+      delay(5000);
+      digitalWrite(7, LOW);
+      digitalWrite(6, LOW);
       delay(300);
 
-  digitalWrite(6, LOW);
-    delay(300);
-
-  digitalWrite(6, HIGH);
-    delay(300);
-      digitalWrite(6, LOW);
-          delay(300);
-                digitalWrite(6, HIGH);
-                          delay(300);
+      digitalWrite(6, HIGH);
+      delay(300);
 
       digitalWrite(6, LOW);
-                delay(300);
+      delay(300);
 
       digitalWrite(6, HIGH);
-                delay(300);
+      delay(300);
       digitalWrite(6, LOW);
-                delay(300);
-                      digitalWrite(6, HIGH);
-                                      delay(300);
-                                                     digitalWrite(12, LOW); //vermelho apagado
+      delay(300);
+      digitalWrite(6, HIGH);
+      delay(300);
+
+      digitalWrite(6, LOW);
+      delay(300);
+
+      digitalWrite(6, HIGH);
+      delay(300);
+      digitalWrite(6, LOW);
+      delay(300);
+      digitalWrite(6, HIGH);
+      delay(300);
+      digitalWrite(12, LOW);  //vermelho apagado
 
 
 
 
 
-     } else {
+    } else {
       digitalWrite(7, LOW);
       digitalWrite(6, HIGH);
-
-      }
+    }
+  }
 }
-}
-      
-     
-
-
